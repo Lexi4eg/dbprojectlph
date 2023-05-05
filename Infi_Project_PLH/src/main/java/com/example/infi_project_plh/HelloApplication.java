@@ -1,4 +1,4 @@
-package com.example.infiprojectplh;
+package com.example.infi_project_plh;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

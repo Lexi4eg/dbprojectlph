@@ -1,38 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="15b5f1fb-c3bb-4d0d-be41-74e254fcdceb" name="Changes" comment="" />
+    <list default="true" id="bad97407-7f2a-4c20-95df-7318ac9a7397" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbprojectlph.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infi_Project_PLH/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infi_Project_PLH/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infiprojectplh/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infiprojectplh/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infiprojectplh/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infiprojectplh/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infiprojectplh/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infiprojectplh/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infiprojectplh/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infiprojectplh/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infiprojectplh/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infiprojectplh/src/main/java/com/example/infiprojectplh/HelloApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infiprojectplh/src/main/java/com/example/infiprojectplh/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infiprojectplh/src/main/java/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infiprojectplh/src/main/resources/com/example/infiprojectplh/hello-view.fxml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectId" id="2OrS2M6pCmWwMiJXponKmT8efZK" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/felixprattes/Programming/Infi_Project_PLH/dbprojectlph",
-    "vue.rearranger.settings.migration": "true"
-  }
-}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="15b5f1fb-c3bb-4d0d-be41-74e254fcdceb" name="Changes" comment="" />
-      <created>1682316999610</created>
+      <changelist id="bad97407-7f2a-4c20-95df-7318ac9a7397" name="Changes" comment="" />
+      <created>1683277680204</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1682316999610</updated>
-      <workItem from="1682317000630" duration="120000" />
+      <updated>1683277680204</updated>
+      <workItem from="1683277685458" duration="30000" />
     </task>
     <servers />
   </component>
