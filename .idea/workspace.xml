@@ -5,9 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bad97407-7f2a-4c20-95df-7318ac9a7397" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbprojectlph.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Infi_Project_PLH/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Infi_Project_PLH/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Infi_Project_PLH/.idea/misc.xml" afterDir="false" />
@@ -21,7 +18,8 @@
       <change afterPath="$PROJECT_DIR$/Infi_Project_PLH/src/main/java/com/example/infi_project_plh/HelloController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Infi_Project_PLH/src/main/java/module-info.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Infi_Project_PLH/src/main/resources/com/example/infi_project_plh/hello-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infiprojectPLH.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/75a687e1-bd12-49ac-91bf-0b5f7900e8ba.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/75a687e1-bd12-49ac-91bf-0b5f7900e8ba.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +38,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/Users/felixprattes"
+    "last_opened_file_path": "/Users/felixprattes/Programming/Infi_Project_PLH/dbprojectlph"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -48,6 +46,12 @@
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$USER_HOME$" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
