@@ -18,7 +18,6 @@
       <change afterPath="$PROJECT_DIR$/Infi_Project_PLH/src/main/java/com/example/infi_project_plh/HelloController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Infi_Project_PLH/src/main/java/module-info.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Infi_Project_PLH/src/main/resources/com/example/infi_project_plh/hello-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infiprojectPLH.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/75a687e1-bd12-49ac-91bf-0b5f7900e8ba.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/75a687e1-bd12-49ac-91bf-0b5f7900e8ba.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -26,6 +25,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2PMwWvdw1FMapauyejclAPfIjLl" />
   <component name="ProjectViewState">
@@ -38,7 +40,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/Users/felixprattes/Programming/Infi_Project_PLH/dbprojectlph"
+    "last_opened_file_path": "/Users/felixprattes/Programming/Infi_Project_PLH/dbprojectlph",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
