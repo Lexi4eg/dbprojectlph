@@ -1,16 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.infi_project_plh.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
-
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="835.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <items>
+          <Button mnemonicParsing="false" text="Button" />
+        </items>
+      </ToolBar>
+   </top>
+   <left>
+      <VBox prefHeight="360.0" prefWidth="252.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="17.0" prefWidth="250.0" text="Anstehende Laeufe" textAlignment="CENTER" />
+            <TableView prefHeight="525.0" prefWidth="450.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="C1" />
+                <TableColumn prefWidth="75.0" text="C2" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="378.0" prefWidth="348.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="354.0" prefWidth="533.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="351.0" text="Ergebnisse" textAlignment="CENTER" />
+                  <TableView prefHeight="242.0" prefWidth="583.0">
+                    <columns>
+                      <TableColumn prefWidth="75.0" text="C1" />
+                      <TableColumn prefWidth="75.0" text="C2" />
+                    </columns>
+                  </TableView>
+               </children>
+            </VBox>
+            <VBox prefHeight="349.0" prefWidth="583.0">
+               <children>
+                  <Label prefHeight="0.0" prefWidth="351.0" text="Anmeldung" />
+               </children></VBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
