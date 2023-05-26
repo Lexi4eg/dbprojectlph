@@ -5,19 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bad97407-7f2a-4c20-95df-7318ac9a7397" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Infi_Project_PLH/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infi_Project_PLH/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infi_Project_PLH/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infi_Project_PLH/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infi_Project_PLH/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infi_Project_PLH/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infi_Project_PLH/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infi_Project_PLH/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infi_Project_PLH/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infi_Project_PLH/src/main/java/com/example/infi_project_plh/HelloApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infi_Project_PLH/src/main/java/com/example/infi_project_plh/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infi_Project_PLH/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infi_Project_PLH/src/main/resources/com/example/infi_project_plh/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/75a687e1-bd12-49ac-91bf-0b5f7900e8ba.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/75a687e1-bd12-49ac-91bf-0b5f7900e8ba.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +18,7 @@
     <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/exportToHTML" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -45,7 +36,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
-    "last_opened_file_path": "/Users/felixprattes/Programming/Infi_Project_PLH/dbprojectlph",
+    "last_opened_file_path": "C:/Users/43650",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   },
   "keyToStringList": {
