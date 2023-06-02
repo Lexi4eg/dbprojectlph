@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="835.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="835.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.infi_project_plh.HelloController">
    <top>
-      <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-        <items>
-          <Button mnemonicParsing="false" text="Button" />
-        </items>
-      </ToolBar>
+       <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+           <Button mnemonicParsing="false" text="Button" fx:id="btnAnmelden"/>
+       </ToolBar>
    </top>
    <left>
       <VBox prefHeight="360.0" prefWidth="252.0" BorderPane.alignment="CENTER">
          <children>
             <Label prefHeight="17.0" prefWidth="250.0" text="Anstehende Laeufe" textAlignment="CENTER" />
-            <TableView prefHeight="525.0" prefWidth="450.0">
-              <columns>
-                <TableColumn prefWidth="75.0" text="C1" />
-                <TableColumn prefWidth="75.0" text="C2" />
-              </columns>
+            <TableView prefHeight="525.0" prefWidth="450.0" fx:id="tvAnstaehendelauefe">
+                <columns>
+                    <TableColumn fx:id="Laufveranstaltungen_ID" prefWidth="88.0" text="Laufveranstaltungen_ID" />
+
+                    <TableColumn fx:id="Name" prefWidth="88.0" text="Name" />
+                    <TableColumn fx:id="Datum" prefWidth="97.0" text="Datum" />
+                    <TableColumn fx:id="Startzeit" prefWidth="93.0" text="Startzeit" />
+                </columns>
             </TableView>
          </children>
       </VBox>
