@@ -46,7 +46,6 @@ public class HelloController implements Initializable {
         ObservableList<Anstaehendelauefe> myAnstaehendelauefeList = AnstaehendelauefeDAO.getVeranstaltung();
         System.out.println(myAnstaehendelauefeList);
 
-
         tvAnstaehendelauefe.setItems(myAnstaehendelauefeList);
     }
 

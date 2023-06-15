@@ -7,8 +7,11 @@
     <list default="true" id="377c0885-25a0-41b2-8e8c-b03075aa3c10" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/src/main/java/model/RagnlisteDAO.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/model/Rangliste.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/infi_project_plh/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/infi_project_plh/HelloController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Anstaehendelauefe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Anstaehendelauefe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/DML_DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/DML_DAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/infi_project_plh/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/infi_project_plh/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,24 +46,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/felixprattes/Programming/Infi_Project_PLH/dbprojectlph/Infi_Project_PLH/src/main/java/util",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2045977",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/felixprattes/Programming/Infi_Project_PLH/dbprojectlph/Infi_Project_PLH/src/main/java/util&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2045977&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/util" />
@@ -119,7 +122,8 @@
       <workItem from="1683277759389" duration="1000" />
       <workItem from="1683884162529" duration="2039000" />
       <workItem from="1683886720075" duration="66000" />
-      <workItem from="1685685298317" duration="8852000" />
+      <workItem from="1685685298317" duration="9508000" />
+      <workItem from="1686734690935" duration="1191000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1685700563836</created>
