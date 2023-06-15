@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bad97407-7f2a-4c20-95df-7318ac9a7397" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Infi_Project_PLH/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Infi_Project_PLH/src/main/java/com/example/infi_project_plh/styles.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Infi_Project_PLH/src/main/java/model/Anmeldung.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Infi_Project_PLH/src/main/java/model/AnmeldungDAO.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Infi_Project_PLH/src/main/java/model/RagnlisteDAO.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Infi_Project_PLH/src/main/java/model/Rangliste.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infi_Project_PLH/src/main/java/com/example/infi_project_plh/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Infi_Project_PLH/src/main/java/com/example/infi_project_plh/HelloApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infi_Project_PLH/src/main/java/com/example/infi_project_plh/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Infi_Project_PLH/src/main/java/com/example/infi_project_plh/HelloController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infi_Project_PLH/src/main/java/model/Anstaehendelauefe.java" beforeDir="false" afterPath="$PROJECT_DIR$/Infi_Project_PLH/src/main/java/model/Anstaehendelauefe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infi_Project_PLH/src/main/java/model/AnstaehendelauefeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Infi_Project_PLH/src/main/java/model/AnstaehendelauefeDAO.java" afterDir="false" />

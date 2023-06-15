@@ -29,20 +29,6 @@ public class HelloController implements Initializable {
     private TableColumn<Anstaehendelauefe, Date>Datetf;
     @FXML
     private TableColumn<Anstaehendelauefe,Time> Startzeittf;
-    @FXML
-    private RadioButton rbm;
-    @FXML
-    private ToggleGroup tgGender;
-    @FXML
-    private RadioButton rbw;
-    @FXML
-    private RadioButton rbd;
-    @FXML
-    private TextField tfLastName;
-    @FXML
-    private TextField tfFirstName;
-    @FXML
-    private Button btnSafe;
 
 
     @FXML
@@ -55,8 +41,6 @@ public class HelloController implements Initializable {
     private TableColumn<Rangliste,Integer>  Plazierungrl;
     @FXML
     private TableColumn<Rangliste, Integer>  Startnummerrl;
-    @FXML
-    private TableColumn Veranstaltungs_IDrl;
 
 
     @Override
