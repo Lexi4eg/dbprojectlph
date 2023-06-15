@@ -63,10 +63,10 @@ public class Anstaehendelauefe {
     @Override
     public String toString() {
         return "Anstaehendelauefe{" +
-                "ID=" + Laufveranstaltungen_ID +
-                ", Name='" + Nameanstaehendelauf + '\'' +
+                "Laufveranstaltungen_ID=" + Laufveranstaltungen_ID +
+                ", Nameanstaehendelauf='" + Nameanstaehendelauf + '\'' +
                 ", Datum=" + Datum +
-                ", Zeit=" + Startzeit +
+                ", Startzeit=" + Startzeit +
                 '}';
     }
 }

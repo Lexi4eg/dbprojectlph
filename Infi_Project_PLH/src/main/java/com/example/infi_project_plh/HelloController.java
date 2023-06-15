@@ -11,8 +11,8 @@ import model.RagnlisteDAO;
 import model.Rangliste;
 
 import java.net.URL;
-import java.sql.Date;
 import java.sql.Time;
+import java.util.Date;
 import java.util.ResourceBundle;
 
 public class HelloController implements Initializable {
@@ -22,15 +22,13 @@ public class HelloController implements Initializable {
     private TableView<Anstaehendelauefe> tvAnstaehendelauefe;
 
     @FXML
-    private TableColumn<?,?> Nametf;
+    private TableColumn<Anstaehendelauefe,String> Nametf;
     @FXML
-    private TableColumn<?,?> Laufveranstaltungen_IDtf;
+    private TableColumn<Anstaehendelauefe,Integer> Laufveranstaltungen_IDtf;
     @FXML
-    private TableColumn<?,?>Datetf;
+    private TableColumn<Anstaehendelauefe, Date>Datetf;
     @FXML
-    private TableColumn<?,?> Startzeittf;
-    @FXML
-    private Button btnAnmelden;
+    private TableColumn<Anstaehendelauefe,Time> Startzeittf;
     @FXML
     private RadioButton rbm;
     @FXML
@@ -46,53 +44,39 @@ public class HelloController implements Initializable {
     @FXML
     private Button btnSafe;
 
-    @FXML
-    private TableColumn<?,?> Laufteilnahme_IDrl;
-    @FXML
-    private TableColumn<?,?> Zeitrl;
-    @FXML
-    private TableColumn<?,?>  Plazierungrl;
-    @FXML
-    private TableColumn<?,?>  Startnummerrl;
+
     @FXML
     private TableView<Rangliste>tvRangliste;
+    @FXML
+    private TableColumn<Rangliste,Integer> Laufteilnahme_IDrl;
+    @FXML
+    private TableColumn<Rangliste, Time> Zeitrl;
+    @FXML
+    private TableColumn<Rangliste,Integer>  Plazierungrl;
+    @FXML
+    private TableColumn<Rangliste, Integer>  Startnummerrl;
+    @FXML
+    private TableColumn Veranstaltungs_IDrl;
 
 
     @Override
 
     public void initialize(URL url, ResourceBundle rb) {
-        //cbPersons.setItems(PersonDAO.getPersons());
-        ObservableList<Anstaehendelauefe> myAnstaehendelauefeList = AnstaehendelauefeDAO.getVeranstaltung();
-        System.out.println(myAnstaehendelauefeList);
+        Laufteilnahme_IDrl.setCellValueFactory(new PropertyValueFactory<Rangliste, Integer>("Lautilnahme_ID"));
+        Zeitrl.setCellValueFactory(new PropertyValueFactory<Rangliste, Time>("Zeit"));
+        Plazierungrl.setCellValueFactory(new PropertyValueFactory<Rangliste, Integer>("Plazierung"));
+
+        Startnummerrl.setCellValueFactory(new PropertyValueFactory<Rangliste, Integer>("Startnummer"));
+
+        tvRangliste.setItems(RagnlisteDAO.getRangliste());
+
+        Nametf.setCellValueFactory(new PropertyValueFactory<Anstaehendelauefe, String>("Nameanstaehendelauf"));
+        Laufveranstaltungen_IDtf.setCellValueFactory(new PropertyValueFactory<Anstaehendelauefe, Integer>("Laufveranstaltungen_ID"));
+        Datetf.setCellValueFactory(new PropertyValueFactory<Anstaehendelauefe, Date>("Datum"));
+        Startzeittf.setCellValueFactory(new PropertyValueFactory<Anstaehendelauefe, Time>("Startzeit"));
+        tvAnstaehendelauefe.setItems(AnstaehendelauefeDAO.getVeranstaltung());
 
 
-        ObservableList<Rangliste> rangliste1 = RagnlisteDAO.getRangliste();
-        System.out.println(rangliste1);
-
-        Laufteilnahme_IDrl.setCellValueFactory(new PropertyValueFactory<>("Lautilnahme_ID"));
-        Zeitrl.setCellValueFactory(new PropertyValueFactory<>("Zeit"));
-        Plazierungrl.setCellValueFactory(new PropertyValueFactory<>("Plazierung"));
-        Startnummerrl.setCellValueFactory(new PropertyValueFactory<>("Startnummer"));
-
-        tvRangliste.setItems(rangliste1);
-
-
-        Nametf.setCellValueFactory(new PropertyValueFactory<>("Name"));
-        Laufveranstaltungen_IDtf.setCellValueFactory(new PropertyValueFactory<>("ID"));
-        Datetf.setCellValueFactory(new PropertyValueFactory<>("Datum"));
-        Startzeittf.setCellValueFactory(new PropertyValueFactory<>("Zeit"));
-
-
-
-
-        tvAnstaehendelauefe.setItems(myAnstaehendelauefeList);
-
-    }
-
-
-    @FXML
-    private void btnAnmelden() {
-        System.out.println("You clicked me!");
     }
 
 }

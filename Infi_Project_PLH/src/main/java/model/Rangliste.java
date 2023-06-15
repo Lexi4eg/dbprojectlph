@@ -1,22 +1,28 @@
 package model;
 
+import javafx.beans.property.SimpleIntegerProperty;
+import javafx.beans.property.SimpleListProperty;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.value.ObservableValue;
+
 import java.sql.Time;
 import java.util.Date;
+import java.util.SimpleTimeZone;
 
 public class Rangliste {
 
-    int Lautilnahme_ID;
-    int Veranstaltungs_ID;
-    Time Zeit;
-    int Plazierung;
-    int Startnummer;
+    private int Lautilnahme_ID;
+    private int  Veranstaltungs_ID;
+    private Time  Zeit;
+    private int  Plazierung;
+    private int  Startnummer;
 
-    public Rangliste(int Lautilnahme_ID, int Veranstaltungs_ID, Time Zeit, int Plazierung, int Startnummer) {
-        this.Lautilnahme_ID = Lautilnahme_ID;
-        this.Veranstaltungs_ID = Veranstaltungs_ID;
-        this.Zeit = Zeit;
-        this.Plazierung = Plazierung;
-        this.Startnummer = Startnummer;
+    public Rangliste(int lautilnahme_ID, int veranstaltungs_ID, Time zeit, int plazierung, int startnummer) {
+        Lautilnahme_ID = lautilnahme_ID;
+        Veranstaltungs_ID = veranstaltungs_ID;
+        Zeit = zeit;
+        Plazierung = plazierung;
+        Startnummer = startnummer;
     }
 
     public int getLautilnahme_ID() {
@@ -35,7 +41,7 @@ public class Rangliste {
         Veranstaltungs_ID = veranstaltungs_ID;
     }
 
-    public Date getZeit() {
+    public Time getZeit() {
         return Zeit;
     }
 
@@ -57,16 +63,5 @@ public class Rangliste {
 
     public void setStartnummer(int startnummer) {
         Startnummer = startnummer;
-    }
-
-    @Override
-    public String toString() {
-        return "Rangliste{" +
-                "Lautilnahme_ID=" + Lautilnahme_ID +
-                ", Veranstaltungs_ID=" + Veranstaltungs_ID +
-                ", Zeit=" + Zeit +
-                ", Plazierung=" + Plazierung +
-                ", Startnummer=" + Startnummer +
-                '}';
     }
 }

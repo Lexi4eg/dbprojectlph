@@ -7,71 +7,62 @@
 
    <left>
       <VBox prefHeight="536.0" prefWidth="368.0" BorderPane.alignment="CENTER">
-         <children>
-            <Label prefHeight="17.0" prefWidth="250.0" text="Anstehende Laeufe" textAlignment="CENTER" />
-            <TableView fx:id="tvAnstaehendelauefe" prefHeight="519.0" prefWidth="532.0">
-                <columns>
-                    <TableColumn fx:id="Laufveranstaltungen_IDtf" prefWidth="88.0" text="Laufveranstaltungen_ID" />
-                    <TableColumn fx:id="Nametf" prefWidth="88.0" text="Name" />
-                    <TableColumn fx:id="Datetf" prefWidth="97.0" text="Date" />
-                    <TableColumn fx:id="Startzeittf" prefWidth="93.0" text="Startzeit" />
-                </columns>
-            </TableView>
-         </children>
+         <Label prefHeight="17.0" prefWidth="250.0" text="Anstehende Laeufe" textAlignment="CENTER"/>
+         <TableView fx:id="tvAnstaehendelauefe" prefHeight="519.0" prefWidth="532.0">
+            <columns>
+               <TableColumn fx:id="Laufveranstaltungen_IDtf" prefWidth="88.0" text="Laufveranstaltungen_ID"/>
+
+               <TableColumn fx:id="Nametf" prefWidth="88.0" text="Name"/>
+               <TableColumn fx:id="Datetf" prefWidth="97.0" text="Date"/>
+               <TableColumn fx:id="Startzeittf" prefWidth="93.0" text="Startzeit"/>
+            </columns>
+         </TableView>
       </VBox>
    </left>
    <center>
       <VBox prefHeight="378.0" prefWidth="348.0" BorderPane.alignment="CENTER">
-         <children>
-            <VBox prefHeight="354.0" prefWidth="533.0">
-               <children>
-                  <Label prefHeight="17.0" prefWidth="351.0" text="Ergebnisse" textAlignment="CENTER" />
-                  <TableView fx:id="tvRangliste" prefHeight="299.0" prefWidth="87.0">
-                    <columns>
-                      <TableColumn fx:id="Laufteilnahme_IDrl" prefWidth="121.0" text="C1" />
-                      <TableColumn fx:id="Zeitrl" prefWidth="106.0" text="C2" />
-                       <TableColumn fx:id="Plazierungrl" prefWidth="117.0" text="C2" />
-                       <TableColumn fx:id="Startnummerrl" prefWidth="116.0" text="C2" />
+         <VBox prefHeight="354.0" prefWidth="533.0">
+            <Label prefHeight="17.0" prefWidth="351.0" text="Ergebnisse" textAlignment="CENTER" />
+            <TableView fx:id="tvRangliste" prefHeight="299.0" prefWidth="87.0">
+               <columns>
+                  <TableColumn fx:id="Laufteilnahme_IDrl" prefWidth="121.0" text="Laufteilnahme_ID" />
+                  <TableColumn fx:id="Zeitrl" prefWidth="82.0" text="Zeitrl" />
+                  <TableColumn fx:id="Plazierungrl" prefWidth="74.0" text="Plazierung" />
+                  <TableColumn fx:id="Startnummerrl" prefWidth="71.0" text="Startnummer" />
 
 
-                    </columns>
-                  </TableView>
-               </children>
-            </VBox>
-            <VBox prefHeight="362.0" prefWidth="468.0">
-               <children>
-                  <HBox prefHeight="148.0" prefWidth="467.0">
+               </columns>
+            </TableView>
+         </VBox>
+         <VBox prefHeight="362.0" prefWidth="468.0">
+            <HBox prefHeight="148.0" prefWidth="467.0">
+               <VBox prefHeight="148.0" prefWidth="121.0">
+                  <Label prefHeight="29.0" prefWidth="101.0" text="Nachname"/>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="64.0"
+                         text="Vorname"/>
+                  <Label prefHeight="17.0" prefWidth="90.0" text="Geburtsdatum"/>
+                  <HBox prefHeight="72.0" prefWidth="105.0">
                      <children>
-                        <VBox prefHeight="148.0" prefWidth="121.0">
-                           <children>
-                              <Label prefHeight="29.0" prefWidth="101.0" text="Nachname" />
-                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="64.0" text="Vorname" />
-                              <Label prefHeight="17.0" prefWidth="90.0" text="Geburtsdatum" />
-                              <HBox prefHeight="72.0" prefWidth="105.0">
-                                 <children>
-                                    <RadioButton fx:id="rbm" mnemonicParsing="false" text="m">
-                                       <toggleGroup>
-                                          <ToggleGroup fx:id="tgGender" />
-                                       </toggleGroup></RadioButton>
-                                    <RadioButton fx:id="rbw" mnemonicParsing="false" text="w" toggleGroup="$tgGender" />
-                                    <RadioButton fx:id="rbd" mnemonicParsing="false" text="d" toggleGroup="$tgGender" />
-                                 </children>
-                              </HBox>
-                           </children>
-                        </VBox>
-                        <VBox prefHeight="131.0" prefWidth="226.0">
-                           <children>
-                              <TextField fx:id="tfLastName" prefHeight="12.0" prefWidth="100.0" />
-                              <TextField fx:id="tfFirstName" />
-
-                           </children>
-                        </VBox>
+                        <RadioButton fx:id="rbm" mnemonicParsing="false" text="m">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="tgGender"/>
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="rbw" mnemonicParsing="false" text="w" toggleGroup="$tgGender"/>
+                        <RadioButton fx:id="rbd" mnemonicParsing="false" text="d" toggleGroup="$tgGender"/>
                      </children>
                   </HBox>
-                  <Button fx:id="btnSafe" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" text="Speichern" textAlignment="CENTER" />
-                  <Label prefHeight="0.0" prefWidth="351.0" text="Anmeldung" />
-               </children></VBox>
-         </children>
+               </VBox>
+               <VBox prefHeight="131.0" prefWidth="226.0">
+                  <TextField fx:id="tfLastName" prefHeight="12.0" prefWidth="100.0"/>
+                  <TextField fx:id="tfFirstName"/>
+
+               </VBox>
+            </HBox>
+            <Button fx:id="btnSafe" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false"
+                    nodeOrientation="RIGHT_TO_LEFT" text="Speichern" textAlignment="CENTER"/>
+            <Label prefHeight="0.0" prefWidth="351.0" text="Anmeldung"/>
+         </VBox>
       </VBox>
    </center>
 </BorderPane>
