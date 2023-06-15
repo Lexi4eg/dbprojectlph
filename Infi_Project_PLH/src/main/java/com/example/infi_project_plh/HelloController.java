@@ -5,9 +5,7 @@ import javafx.beans.property.SimpleListProperty;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import model.Anstaehendelauefe;
 import model.AnstaehendelauefeDAO;
 
@@ -37,8 +35,7 @@ public class HelloController implements Initializable {
     private Button btnAnmelden;
     @FXML
     private Button btnSafe;
-    @FXML
-    private Button btnSafe;
+
     @FXML
     private TextField tfLastName;
     @FXML

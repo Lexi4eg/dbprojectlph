@@ -60,16 +60,16 @@
                               </HBox>
                            </children>
                         </VBox>
-                        <VBox prefHeight="6.0" prefWidth="100.0">
+                        <VBox prefHeight="131.0" prefWidth="226.0">
                            <children>
                               <TextField fx:id="tfLastName" prefHeight="0.0" prefWidth="100.0" />
                               <TextField fx:id="tfFirstName" />
-                              <DatePicker fx:id="tfBDate" />
+
                            </children>
                         </VBox>
                      </children>
                   </HBox>
-                  <Button fx:id="btnSafe" mnemonicParsing="false" onAction="#handleBtnSaveAction" text="Speichern" />
+                  <Button fx:id="btnSafe" mnemonicParsing="false" text="Speichern" />
                   <Label prefHeight="0.0" prefWidth="351.0" text="Anmeldung" />
                </children></VBox>
          </children>
