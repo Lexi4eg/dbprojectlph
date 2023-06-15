@@ -8,10 +8,10 @@ import javafx.collections.ObservableList;
 import util.DBConnector;
 import util.DML_DAO;
 
-public class Anmeldung DAO {
+public class AnmeldungDAO {
 
-    public static ObservableList<Person> getPersons () {
-        ObservableList<Person> personsList =
+    public static ObservableList<Persons> getPersons () {
+        ObservableList<Persons> personsList =
                 FXCollections.observableArrayList();
         Connection con;
 
