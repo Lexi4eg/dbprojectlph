@@ -7,8 +7,6 @@
     <list default="true" id="377c0885-25a0-41b2-8e8c-b03075aa3c10" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/src/main/java/model/RagnlisteDAO.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/model/Rangliste.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/infi_project_plh/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/infi_project_plh/HelloController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Anstaehendelauefe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Anstaehendelauefe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/util/DML_DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/DML_DAO.java" afterDir="false" />
@@ -123,7 +121,7 @@
       <workItem from="1683884162529" duration="2039000" />
       <workItem from="1683886720075" duration="66000" />
       <workItem from="1685685298317" duration="9508000" />
-      <workItem from="1686734690935" duration="1191000" />
+      <workItem from="1686734690935" duration="1779000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1685700563836</created>

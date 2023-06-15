@@ -40,14 +40,13 @@ public class HelloController implements Initializable {
 
 
     @Override
+    public void initialize(URL location, ResourceBundle resources) {
 
-    public void initialize(URL url, ResourceBundle rb) {
-        //cbPersons.setItems(PersonDAO.getPersons());
-        ObservableList<Anstaehendelauefe> myAnstaehendelauefeList = AnstaehendelauefeDAO.getVeranstaltung();
-        System.out.println(myAnstaehendelauefeList);
+        //make sure the property value factory should be exactly same as the e.g getStudentId from your model class
+        tvAnstaehendelauefe.setItems(AnstaehendelauefeDAO.getVeranstaltung());
 
-        tvAnstaehendelauefe.setItems(myAnstaehendelauefeList);
     }
+
 
     @FXML
     private void btnAnmelden() {
