@@ -8,6 +8,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import model.Anstaehendelauefe;
 import model.AnstaehendelauefeDAO;
 
@@ -16,6 +17,7 @@ import java.sql.Date;
 import java.sql.Time;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.Properties;
 import java.util.ResourceBundle;
 
 public class HelloController implements Initializable {
@@ -34,6 +36,7 @@ public class HelloController implements Initializable {
     @FXML
     private TableColumn<Anstaehendelauefe, Time> Startzeit;
 
+
     @FXML
     private Button btnAnmelden;
 
@@ -41,8 +44,11 @@ public class HelloController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        Laufveranstaltungen_ID.setCellValueFactory(new PropertyValueFactory<>("Laufveranstaltungen_ID"));
+        Name.setCellValueFactory(new PropertyValueFactory<>("Name"));
 
-        //make sure the property value factory should be exactly same as the e.g getStudentId from your model class
+
+        System.out.println(AnstaehendelauefeDAO.getVeranstaltung());
         tvAnstaehendelauefe.setItems(AnstaehendelauefeDAO.getVeranstaltung());
 
     }
@@ -52,5 +58,4 @@ public class HelloController implements Initializable {
     private void btnAnmelden() {
         System.out.println("You clicked me!");
     }
-
 }

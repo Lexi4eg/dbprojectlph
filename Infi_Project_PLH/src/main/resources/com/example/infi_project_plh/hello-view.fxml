@@ -17,7 +17,7 @@
                     <TableColumn fx:id="Laufveranstaltungen_ID" prefWidth="88.0" text="Laufveranstaltungen_ID" />
 
                     <TableColumn fx:id="Name" prefWidth="88.0" text="Name" />
-                    <TableColumn fx:id="Datum" prefWidth="97.0" text="Datum" />
+                    <TableColumn fx:id="Date" prefWidth="97.0" text="Date" />
                     <TableColumn fx:id="Startzeit" prefWidth="93.0" text="Startzeit" />
                 </columns>
             </TableView>
