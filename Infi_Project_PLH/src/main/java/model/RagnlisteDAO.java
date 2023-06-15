@@ -9,11 +9,11 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class RagnlisteDAO {
-    public static ObservableList<Anstaehendelauefe> getVeranstaltung () {
-        ObservableList<Anstaehendelauefe> Anstaehende1 =
+    public static ObservableList<Rangliste> getRangliste () {
+        ObservableList<Rangliste> Rangliste =
                 FXCollections.observableArrayList();
         Connection con;
-        Anstaehendelauefe an1;
+        Rangliste an1;
 
         try {
             con = DBConnector.connect();
@@ -28,15 +28,16 @@ public class RagnlisteDAO {
                         rs.getInt("Lautilnahme_ID"),
                         rs.getInt("Veranstaltungs_ID"),
                         rs.getTime("Zeit"),
-                        rs.getInt("Plazierung")
+                        rs.getInt("Plazierung"),
+                        rs.getInt("Startnummer")
                 );
-                Anstaehende1.add(an1);
+                Rangliste.add(an1);
             }
         } catch (SQLException ex) {
             System.err.println(ex.getMessage());
         }
 
-        return Anstaehende1;
+        return Rangliste;
     }
 
 }

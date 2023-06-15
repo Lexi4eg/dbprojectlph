@@ -1,16 +1,17 @@
 package model;
 
+import java.sql.Time;
 import java.util.Date;
 
 public class Rangliste {
 
     int Lautilnahme_ID;
     int Veranstaltungs_ID;
-    Date Zeit;
+    Time Zeit;
     int Plazierung;
     int Startnummer;
 
-    public Rangliste(int lautilnahme_ID, int veranstaltungs_ID, Date zeit, int plazierung, int startnummer) {
+    public Rangliste(int lautilnahme_ID, int veranstaltungs_ID, Time zeit, int plazierung, int startnummer) {
         Lautilnahme_ID = lautilnahme_ID;
         Veranstaltungs_ID = veranstaltungs_ID;
         Zeit = zeit;
@@ -38,7 +39,7 @@ public class Rangliste {
         return Zeit;
     }
 
-    public void setZeit(Date zeit) {
+    public void setZeit(Time zeit) {
         Zeit = zeit;
     }
 

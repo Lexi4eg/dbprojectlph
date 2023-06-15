@@ -7,7 +7,6 @@ import java.sql.SQLException;
 public class DML_DAO {
     public static void executeDML (String sql) {
         Connection con;
-        
         try {
             con = DBConnector.connect();
             System.out.println("sql: " + sql);
