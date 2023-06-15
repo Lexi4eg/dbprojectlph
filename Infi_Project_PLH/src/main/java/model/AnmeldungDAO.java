@@ -21,12 +21,13 @@ public class AnmeldungDAO {
             ResultSet rs = con.createStatement().executeQuery(sql);
 
             while (rs.next()) {
-                personsList.add(new Person(
+                person = new Person(
                         rs.getString("last_name"),
                         rs.getString("first_name"),
                         rs.getBirthyear("BYear"),
                         rs.getString("Gender"),
                 ));
+                persons.add(Person);
             }
         } catch (SQLException ex) {
             System.err.println(ex.getMessage());
