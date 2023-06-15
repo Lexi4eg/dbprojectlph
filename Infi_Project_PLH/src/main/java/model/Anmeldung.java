@@ -1,15 +1,18 @@
-@FXML
-private void handleBtnSaveAction(ActionEvent event) {
-        Person p = cbPersons.getSelectionModel().getSelectedItem();
+public class Anmeldung{
+    private String firstname;
+    private String lastname;
+    private date Birthdate;
+    private String gender;
 
-        if (p == null)
-            return;
 
-        p.setLastName(tfLastName.getText());
-        p.setFirstName(tfFirstName.getText());
-        p.setdpGebd(dpBDate.getDate());
+    public Anmledung (String firstname, String lastname, date Birthdate, String gender){
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.birthdate = birthdate;
+        this.gender = gender;
+    }
 
-        int inx = cbPersons.getSelectionModel().getSelectedIndex();
-        persons.set(inx, p);
+    public int getFi
 
-        }
+
+}

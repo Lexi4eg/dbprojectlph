@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bad97407-7f2a-4c20-95df-7318ac9a7397" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Infi_Project_PLH/src/main/java/model/RagnlisteDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infi_Project_PLH/src/main/java/model/Rangliste.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infi_Project_PLH/src/main/java/com/example/infi_project_plh/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Infi_Project_PLH/src/main/java/com/example/infi_project_plh/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infi_Project_PLH/src/main/java/model/Anstaehendelauefe.java" beforeDir="false" afterPath="$PROJECT_DIR$/Infi_Project_PLH/src/main/java/model/Anstaehendelauefe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infi_Project_PLH/src/main/java/util/DML_DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Infi_Project_PLH/src/main/java/util/DML_DAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infi_Project_PLH/src/main/resources/com/example/infi_project_plh/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Infi_Project_PLH/src/main/resources/com/example/infi_project_plh/hello-view.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="bad97407-7f2a-4c20-95df-7318ac9a7397" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
