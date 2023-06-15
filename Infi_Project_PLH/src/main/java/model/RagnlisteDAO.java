@@ -18,7 +18,7 @@ public class RagnlisteDAO {
         try {
             con = DBConnector.connect();
             System.out.println("con: " + con);
-            String sql = "SELECT * FROM Laufteilnahme ";
+            String sql = "SELECT Lautilnahme_ID,Veranstaltungs_ID, Zeit, Plazierung, Startnummer  FROM Laufteilnahme ";
 
             ResultSet rs = con.createStatement().executeQuery(sql);
             System.out.println("Test");

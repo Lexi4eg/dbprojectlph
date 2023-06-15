@@ -1,14 +1,15 @@
+package model;
+
 public class Anmeldung{
     private String firstname;
     private String lastname;
-    private date Birthdate;
+
     private String gender;
 
 
-    public Anmeldung (String firstname, String lastname, date Birthdate, String gender){
+    public Anmeldung (String firstname, String lastname  , String gender){
         this.firstname = firstname;
         this.lastname = lastname;
-        this.birthdate = birthdate;
         this.gender = gender;
     }
 
@@ -28,13 +29,7 @@ public class Anmeldung{
         this.lastname = lastname;
     }
 
-    public date getBirthdate() {
-        return Birthdate;
-    }
 
-    public void setBirthdate(date birthdate) {
-        Birthdate = birthdate;
-    }
 
     public String getGender() {
         return gender;

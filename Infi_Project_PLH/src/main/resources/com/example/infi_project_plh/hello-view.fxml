@@ -4,22 +4,17 @@
 <?import javafx.scene.layout.*?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="835.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.infi_project_plh.HelloController">
-   <top>
-       <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-           <Button fx:id="btnAnmelden" mnemonicParsing="false" text="Button" />
-       </ToolBar>
-   </top>
+
    <left>
-      <VBox prefHeight="360.0" prefWidth="252.0" BorderPane.alignment="CENTER">
+      <VBox prefHeight="536.0" prefWidth="368.0" BorderPane.alignment="CENTER">
          <children>
             <Label prefHeight="17.0" prefWidth="250.0" text="Anstehende Laeufe" textAlignment="CENTER" />
-            <TableView fx:id="tvAnstaehendelauefe" prefHeight="525.0" prefWidth="450.0">
+            <TableView fx:id="tvAnstaehendelauefe" prefHeight="519.0" prefWidth="532.0">
                 <columns>
-                    <TableColumn fx:id="Laufveranstaltungen_ID" prefWidth="88.0" text="Laufveranstaltungen_ID" />
-
-                    <TableColumn fx:id="Name" prefWidth="88.0" text="Name" />
-                    <TableColumn fx:id="Date" prefWidth="97.0" text="Date" />
-                    <TableColumn fx:id="Startzeit" prefWidth="93.0" text="Startzeit" />
+                    <TableColumn fx:id="Laufveranstaltungen_IDtf" prefWidth="88.0" text="Laufveranstaltungen_ID" />
+                    <TableColumn fx:id="Nametf" prefWidth="88.0" text="Name" />
+                    <TableColumn fx:id="Datetf" prefWidth="97.0" text="Date" />
+                    <TableColumn fx:id="Startzeittf" prefWidth="93.0" text="Startzeit" />
                 </columns>
             </TableView>
          </children>
@@ -31,24 +26,28 @@
             <VBox prefHeight="354.0" prefWidth="533.0">
                <children>
                   <Label prefHeight="17.0" prefWidth="351.0" text="Ergebnisse" textAlignment="CENTER" />
-                  <TableView prefHeight="242.0" prefWidth="583.0">
+                  <TableView fx:id="tvRangliste" prefHeight="299.0" prefWidth="87.0">
                     <columns>
-                      <TableColumn prefWidth="75.0" text="C1" />
-                      <TableColumn prefWidth="75.0" text="C2" />
+                      <TableColumn fx:id="Laufteilnahme_IDrl" prefWidth="121.0" text="C1" />
+                      <TableColumn fx:id="Zeitrl" prefWidth="106.0" text="C2" />
+                       <TableColumn fx:id="Plazierungrl" prefWidth="117.0" text="C2" />
+                       <TableColumn fx:id="Startnummerrl" prefWidth="116.0" text="C2" />
+
+
                     </columns>
                   </TableView>
                </children>
             </VBox>
-            <VBox prefHeight="349.0" prefWidth="583.0">
+            <VBox prefHeight="362.0" prefWidth="468.0">
                <children>
-                  <HBox prefHeight="100.0" prefWidth="200.0">
+                  <HBox prefHeight="148.0" prefWidth="467.0">
                      <children>
-                        <VBox prefHeight="79.0" prefWidth="226.0">
+                        <VBox prefHeight="148.0" prefWidth="121.0">
                            <children>
-                              <Label prefHeight="43.0" prefWidth="57.0" text="Nachname" />
-                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="62.0" text="Vorname" />
-                              <Label text="Geburtsdatum" />
-                              <HBox prefHeight="100.0" prefWidth="200.0">
+                              <Label prefHeight="29.0" prefWidth="101.0" text="Nachname" />
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="64.0" text="Vorname" />
+                              <Label prefHeight="17.0" prefWidth="90.0" text="Geburtsdatum" />
+                              <HBox prefHeight="72.0" prefWidth="105.0">
                                  <children>
                                     <RadioButton fx:id="rbm" mnemonicParsing="false" text="m">
                                        <toggleGroup>
@@ -69,7 +68,7 @@
                         </VBox>
                      </children>
                   </HBox>
-                  <Button fx:id="btnSafe" mnemonicParsing="false" text="Speichern" />
+                  <Button fx:id="btnSafe" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" text="Speichern" textAlignment="CENTER" />
                   <Label prefHeight="0.0" prefWidth="351.0" text="Anmeldung" />
                </children></VBox>
          </children>

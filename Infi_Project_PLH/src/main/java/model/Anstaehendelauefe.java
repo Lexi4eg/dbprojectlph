@@ -10,44 +10,61 @@ import java.util.SimpleTimeZone;
 
 public class Anstaehendelauefe {
 
-    private SimpleIntegerProperty Laufveranstaltungen_ID;
-    private SimpleStringProperty  Name;
-    private SimpleDateFormat  Datum;
-    private SimpleTimeZone Startzeit;
+    private int Laufveranstaltungen_ID;
+    private String  Nameanstaehendelauf;
+    private Date  Datum;
+    private Time Startzeit;
 
-    public Anstaehendelauefe(int Laufveranstaltungen_ID, String Name, Date Datum, Time Startzeit) {
-        this.Laufveranstaltungen_ID = new SimpleIntegerProperty(Laufveranstaltungen_ID);
-        this.Name = new SimpleStringProperty(Name);
+    public Anstaehendelauefe(int Laufveranstaltungen_ID, String Nameanstaehendelauf, Date Datum, Time Startzeit) {
+        this.Laufveranstaltungen_ID = Laufveranstaltungen_ID;
+        this.Nameanstaehendelauf = Nameanstaehendelauf;
+        this.Datum = Datum;
+        this.Startzeit = Startzeit;
     }
 
-    public Anstaehendelauefe(int Laufveranstaltungen_ID, String Name) {
-        this.Laufveranstaltungen_ID = new SimpleIntegerProperty(Laufveranstaltungen_ID);
-        this.Name = new SimpleStringProperty(Name);
+    public Anstaehendelauefe(int Laufveranstaltungen_ID, String Nameanstaehendelauf) {
+        this.Laufveranstaltungen_ID = Laufveranstaltungen_ID;
+        this.Nameanstaehendelauf = Nameanstaehendelauf;
+
     }
 
-    public SimpleIntegerProperty getID() {
+    public int getLaufveranstaltungen_ID() {
         return Laufveranstaltungen_ID;
     }
 
-    public void setID(SimpleIntegerProperty Laufveranstaltungen_ID) {
-        this.Laufveranstaltungen_ID = Laufveranstaltungen_ID;
+    public void setLaufveranstaltungen_ID(int laufveranstaltungen_ID) {
+        Laufveranstaltungen_ID = laufveranstaltungen_ID;
     }
 
-    public SimpleStringProperty getName() {
-        return Name;
+    public String getNameanstaehendelauf() {
+        return Nameanstaehendelauf;
     }
 
-    public void setName(SimpleStringProperty name) {
-        Name = name;
+    public void setNameanstaehendelauf(String Nameanstaehendelauf) {
+        this.Nameanstaehendelauf = Nameanstaehendelauf;
     }
 
+    public Date getDatum() {
+        return Datum;
+    }
 
+    public void setDatum(Date datum) {
+        Datum = datum;
+    }
+
+    public Time getStartzeit() {
+        return Startzeit;
+    }
+
+    public void setStartzeit(Time startzeit) {
+        Startzeit = startzeit;
+    }
 
     @Override
     public String toString() {
         return "Anstaehendelauefe{" +
                 "ID=" + Laufveranstaltungen_ID +
-                ", Name='" + Name + '\'' +
+                ", Name='" + Nameanstaehendelauf + '\'' +
                 ", Datum=" + Datum +
                 ", Zeit=" + Startzeit +
                 '}';

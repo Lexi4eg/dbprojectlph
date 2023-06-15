@@ -1,53 +1,62 @@
 package com.example.infi_project_plh;
 
-import javafx.beans.property.ListProperty;
-import javafx.beans.property.SimpleListProperty;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 import model.Anstaehendelauefe;
 import model.AnstaehendelauefeDAO;
+import model.RagnlisteDAO;
+import model.Rangliste;
 
 import java.net.URL;
 import java.sql.Date;
 import java.sql.Time;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.ResourceBundle;
 
 public class HelloController implements Initializable {
 
-    private Anstaehendelauefe anstaehendelauefe;
 
     @FXML
     private TableView<Anstaehendelauefe> tvAnstaehendelauefe;
 
-    @FXML               //Zeilenobjektklasse, M// emberklasse
-    private TableColumn<Anstaehendelauefe, String> Name;
     @FXML
-    private TableColumn<Anstaehendelauefe, Integer> Laufveranstaltungen_ID;
+    private TableColumn<?,?> Nametf;
     @FXML
-    private TableColumn<Anstaehendelauefe, Date> Date;
+    private TableColumn<?,?> Laufveranstaltungen_IDtf;
     @FXML
-    private TableColumn<Anstaehendelauefe, Time> Startzeit;
+    private TableColumn<?,?>Datetf;
+    @FXML
+    private TableColumn<?,?> Startzeittf;
     @FXML
     private Button btnAnmelden;
     @FXML
-    private Button btnSafe;
-
+    private RadioButton rbm;
+    @FXML
+    private ToggleGroup tgGender;
+    @FXML
+    private RadioButton rbw;
+    @FXML
+    private RadioButton rbd;
     @FXML
     private TextField tfLastName;
     @FXML
     private TextField tfFirstName;
     @FXML
-    private TextField tfBDate;
+    private Button btnSafe;
+
     @FXML
-    private RadioButton rbm;
+    private TableColumn<?,?> Laufteilnahme_IDrl;
     @FXML
-    private RadioButton rbw;
+    private TableColumn<?,?> Zeitrl;
     @FXML
-    private RadioButton rbd;
+    private TableColumn<?,?>  Plazierungrl;
+    @FXML
+    private TableColumn<?,?>  Startnummerrl;
+    @FXML
+    private TableView<Rangliste>tvRangliste;
+
 
     @Override
 
@@ -57,24 +66,30 @@ public class HelloController implements Initializable {
         System.out.println(myAnstaehendelauefeList);
 
 
+        ObservableList<Rangliste> rangliste1 = RagnlisteDAO.getRangliste();
+        System.out.println(rangliste1);
+
+        Laufteilnahme_IDrl.setCellValueFactory(new PropertyValueFactory<>("Lautilnahme_ID"));
+        Zeitrl.setCellValueFactory(new PropertyValueFactory<>("Zeit"));
+        Plazierungrl.setCellValueFactory(new PropertyValueFactory<>("Plazierung"));
+        Startnummerrl.setCellValueFactory(new PropertyValueFactory<>("Startnummer"));
+
+        tvRangliste.setItems(rangliste1);
+
+
+        Nametf.setCellValueFactory(new PropertyValueFactory<>("Name"));
+        Laufveranstaltungen_IDtf.setCellValueFactory(new PropertyValueFactory<>("ID"));
+        Datetf.setCellValueFactory(new PropertyValueFactory<>("Datum"));
+        Startzeittf.setCellValueFactory(new PropertyValueFactory<>("Zeit"));
+
+
+
+
         tvAnstaehendelauefe.setItems(myAnstaehendelauefeList);
-    }
-
-    @FXML
-    private void handleBtnSaveAction(ActionEvent event) {
-        Person p = cbPersons.getSelectionModel().getSelectedItem();
-
-        if (p == null)
-            return;
-
-        p.setLastName(tfLastName.getText());
-        p.setFirstName(tfFirstName.getText());
-        p.setdpGebd(dpBDate.getDate());
-
-        int inx = cbPersons.getSelectionModel().getSelectedIndex();
-        persons.set(inx, p);
 
     }
+
+
     @FXML
     private void btnAnmelden() {
         System.out.println("You clicked me!");

@@ -11,12 +11,12 @@ public class Rangliste {
     int Plazierung;
     int Startnummer;
 
-    public Rangliste(int lautilnahme_ID, int veranstaltungs_ID, Time zeit, int plazierung, int startnummer) {
-        Lautilnahme_ID = lautilnahme_ID;
-        Veranstaltungs_ID = veranstaltungs_ID;
-        Zeit = zeit;
-        Plazierung = plazierung;
-        Startnummer = startnummer;
+    public Rangliste(int Lautilnahme_ID, int Veranstaltungs_ID, Time Zeit, int Plazierung, int Startnummer) {
+        this.Lautilnahme_ID = Lautilnahme_ID;
+        this.Veranstaltungs_ID = Veranstaltungs_ID;
+        this.Zeit = Zeit;
+        this.Plazierung = Plazierung;
+        this.Startnummer = Startnummer;
     }
 
     public int getLautilnahme_ID() {
