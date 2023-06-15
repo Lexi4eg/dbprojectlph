@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bad97407-7f2a-4c20-95df-7318ac9a7397" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/75a687e1-bd12-49ac-91bf-0b5f7900e8ba.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/75a687e1-bd12-49ac-91bf-0b5f7900e8ba.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LaufveranstaltungNetBeansNeu/build/built-jar.properties" beforeDir="false" afterPath="$PROJECT_DIR$/LaufveranstaltungNetBeansNeu/build/built-jar.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LaufveranstaltungNetBeansNeu/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/LaufveranstaltungNetBeansNeu/nbproject/private/private.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +37,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
-    "last_opened_file_path": "C:/Users/43650",
+    "last_opened_file_path": "C:/Users/julia/OneDrive/Dokumente/Schule/INFI/3.Klasse/Projekt/dbprojectlph",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   },
   "keyToStringList": {

@@ -33,11 +33,24 @@ public class HelloController implements Initializable {
     private TableColumn<Anstaehendelauefe, Date> Date;
     @FXML
     private TableColumn<Anstaehendelauefe, Time> Startzeit;
-
     @FXML
     private Button btnAnmelden;
-
-
+    @FXML
+    private Button btnSafe;
+    @FXML
+    private Button btnSafe;
+    @FXML
+    private TextField tfLastName;
+    @FXML
+    private TextField tfFirstName;
+    @FXML
+    private TextField tfBDate;
+    @FXML
+    private RadioButton rbm;
+    @FXML
+    private RadioButton rbw;
+    @FXML
+    private RadioButton rbd;
 
     @Override
 

@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="835.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.infi_project_plh.HelloController">
    <top>
        <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-           <Button mnemonicParsing="false" text="Button" fx:id="btnAnmelden"/>
+           <Button fx:id="btnAnmelden" mnemonicParsing="false" text="Button" />
        </ToolBar>
    </top>
    <left>
       <VBox prefHeight="360.0" prefWidth="252.0" BorderPane.alignment="CENTER">
          <children>
             <Label prefHeight="17.0" prefWidth="250.0" text="Anstehende Laeufe" textAlignment="CENTER" />
-            <TableView prefHeight="525.0" prefWidth="450.0" fx:id="tvAnstaehendelauefe">
+            <TableView fx:id="tvAnstaehendelauefe" prefHeight="525.0" prefWidth="450.0">
                 <columns>
                     <TableColumn fx:id="Laufveranstaltungen_ID" prefWidth="88.0" text="Laufveranstaltungen_ID" />
 
@@ -40,6 +41,35 @@
             </VBox>
             <VBox prefHeight="349.0" prefWidth="583.0">
                <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <VBox prefHeight="79.0" prefWidth="226.0">
+                           <children>
+                              <Label text="Nachname" />
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="62.0" text="Vorname" />
+                              <Label text="Geburtsdatum" />
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <RadioButton fx:id="rbm" mnemonicParsing="false" text="m">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="tgGender" />
+                                       </toggleGroup></RadioButton>
+                                    <RadioButton fx:id="rbw" mnemonicParsing="false" text="w" toggleGroup="$tgGender" />
+                                    <RadioButton fx:id="rbd" mnemonicParsing="false" text="d" toggleGroup="$tgGender" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="6.0" prefWidth="100.0">
+                           <children>
+                              <TextField fx:id="tfLastName" prefHeight="0.0" prefWidth="100.0" />
+                              <TextField fx:id="tfFirstName" />
+                              <DatePicker fx:id="tfBDate" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Button fx:id="btnSafe" mnemonicParsing="false" onAction="#handleBtnSaveAction" text="Speichern" />
                   <Label prefHeight="0.0" prefWidth="351.0" text="Anmeldung" />
                </children></VBox>
          </children>
