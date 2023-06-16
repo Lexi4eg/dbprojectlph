@@ -11,7 +11,6 @@
       <change afterPath="$PROJECT_DIR$/src/main/java/model/AnmeldungDAO.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/model/RagnlisteDAO.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/model/Rangliste.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/infi_project_plh/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/infi_project_plh/HelloApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/infi_project_plh/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/infi_project_plh/HelloController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Anstaehendelauefe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Anstaehendelauefe.java" afterDir="false" />
@@ -85,6 +84,9 @@
       <recent name="$PROJECT_DIR$/src/main/resources/com/example/infi_project_plh" />
       <recent name="$PROJECT_DIR$/src/main/java/model" />
     </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.example.infi_project_plh" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.example.infi_project_plh" />
       <recent name="" />
@@ -139,7 +141,7 @@
       <workItem from="1686734690935" duration="9099000" />
       <workItem from="1686842552962" duration="2958000" />
       <workItem from="1686845970690" duration="5174000" />
-      <workItem from="1686893995922" duration="351000" />
+      <workItem from="1686893995922" duration="2044000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1685700563836</created>

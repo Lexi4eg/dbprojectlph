@@ -41,6 +41,12 @@ public class HelloController implements Initializable {
     private TableColumn<Rangliste,Integer>  Plazierungrl;
     @FXML
     private TableColumn<Rangliste, Integer>  Startnummerrl;
+    @FXML
+    private TextField Vorname;
+    @FXML
+    private TextField Nachname;
+    @FXML
+    private TextField Adresse;
 
 
     @Override
@@ -61,6 +67,17 @@ public class HelloController implements Initializable {
         tvAnstaehendelauefe.setItems(AnstaehendelauefeDAO.getVeranstaltung());
 
 
+    }
+
+    @Override
+
+    public void sendmessage(){
+        String vorname = Vorname.getText();
+        String nachname = Nachname.getText();
+        String adresse = Adresse.getText();
+        System.out.println(vorname);
+        System.out.println(nachname);
+        System.out.println(adresse);
     }
 
 }
