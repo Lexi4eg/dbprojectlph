@@ -10,11 +10,11 @@ import util.DML_DAO;
 
 public class AnmeldungDAO {
 
-        public static ObservableList<Laeufer> getLaeufer () {
-                ObservableList<Laeufer> laeuferList =
+        public static ObservableList<laeufer> getLaeufer () {
+                ObservableList<laeufer> laeuferList =
                         FXCollections.observableArrayList();
                 Connection con;
-                Rangliste an1;
+                laeufer an1;
 
                 try {
                         con = DBConnector.connect();
@@ -25,22 +25,22 @@ public class AnmeldungDAO {
                         ResultSet rs = con.createStatement().executeQuery(sql);
 
                         while (rs.next()) {
-                                an1 = new Laeufer(
+                                an1 = new laeufer(
                                         rs.getInt("Lauefer_ID"),
                                         rs.getString("Vorname"),
                                         rs.getString("Nachname"),
                                         rs.getString("Adresse")
                                 );
-                                Rangliste.add(an1);
+                                laeuferList.add(an1);
                         }
                 } catch (SQLException ex) {
                         System.err.println(ex.getMessage());
                 }
 
-                return Laeufer;
+                return laeuferList;
         }
 
-        public static void saveLaufer (Laeufer laeufer){
+        public static void saveLaufer (laeufer laeufer1){
                 String sql = "Insert into kunde (Vorname, Nachname) values("
                         + " " + laeufer.getVorname() + " , "
                         + " " + laeufer.getNachname() + " , "

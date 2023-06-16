@@ -69,15 +69,6 @@ public class HelloController implements Initializable {
 
     }
 
-    @Override
-
-    public void sendmessage(){
-        String vorname = Vorname.getText();
-        String nachname = Nachname.getText();
-        String adresse = Adresse.getText();
-        System.out.println(vorname);
-        System.out.println(nachname);
-        System.out.println(adresse);
-    }
+    @
 
 }

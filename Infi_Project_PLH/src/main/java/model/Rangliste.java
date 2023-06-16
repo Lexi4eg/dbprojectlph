@@ -9,7 +9,7 @@ import java.sql.Time;
 import java.util.Date;
 import java.util.SimpleTimeZone;
 
-public class Rangliste {
+public class Rangliste  {
 
     private int Lautilnahme_ID;
     private int  Veranstaltungs_ID;
@@ -24,6 +24,8 @@ public class Rangliste {
         Plazierung = plazierung;
         Startnummer = startnummer;
     }
+
+
 
     public int getLautilnahme_ID() {
         return Lautilnahme_ID;
