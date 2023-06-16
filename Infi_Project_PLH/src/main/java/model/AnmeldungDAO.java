@@ -10,25 +10,26 @@ import util.DML_DAO;
 
 public class AnmeldungDAO {
 
-        public static ObservableList<Laufer> getLaefer () {
-                ObservableList<Laufer> lauferObservableList =
+        public static ObservableList<Laeufer> getLaeufer () {
+                ObservableList<Laeufer> laeuferList =
                         FXCollections.observableArrayList();
                 Connection con;
                 Rangliste an1;
 
                 try {
                         con = DBConnector.connect();
-                        ResultSet rs = con.createStatement().executeQuery(sql);
                         System.out.println("con: " + con);
                         String sql = "SELECT * FROM lauefer ";
+
 
                         ResultSet rs = con.createStatement().executeQuery(sql);
 
                         while (rs.next()) {
-                                an1 = new Laufer(
+                                an1 = new Laeufer(
                                         rs.getInt("Lauefer_ID"),
-                                        rs.getInt("Vorname"),
-                                        rs.getTime("Nachname"),
+                                        rs.getString("Vorname"),
+                                        rs.getString("Nachname"),
+                                        rs.getString("Adresse")
                                 );
                                 Rangliste.add(an1);
                         }
@@ -36,13 +37,14 @@ public class AnmeldungDAO {
                         System.err.println(ex.getMessage());
                 }
 
-                return Rangliste;
+                return Laeufer;
         }
 
-        public static void saveLaufer (Lauefer lauefer){
+        public static void saveLaufer (Laeufer laeufer){
                 String sql = "Insert into kunde (Vorname, Nachname) values("
-                        + " " + kunde.getVorname() + " , "
-                        + " " + kunde.getNachname() + " , ";
+                        + " " + laeufer.getVorname() + " , "
+                        + " " + laeufer.getNachname() + " , "
+                        + " " + laeufer.getAdresse() + " , ";
                 System.out.println("sql: " + sql);
                 DML_DAO.executeDML(sql);
         }
