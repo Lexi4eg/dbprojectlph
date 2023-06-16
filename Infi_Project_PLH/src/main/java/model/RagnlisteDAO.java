@@ -21,7 +21,6 @@ public class RagnlisteDAO {
             String sql = "SELECT Lautilnahme_ID,Veranstaltungs_ID, Zeit, Plazierung, Startnummer  FROM Laufteilnahme ";
 
             ResultSet rs = con.createStatement().executeQuery(sql);
-            System.out.println("Test");
 
             while (rs.next()) {
                 an1 = new Rangliste(
