@@ -1,58 +1,74 @@
 package com.example.infi_project_plh;
 
-import javafx.beans.property.ListProperty;
-import javafx.beans.property.SimpleListProperty;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 import model.Anstaehendelauefe;
 import model.AnstaehendelauefeDAO;
+import model.RagnlisteDAO;
+import model.Rangliste;
 
 import java.net.URL;
-import java.sql.Date;
 import java.sql.Time;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.ResourceBundle;
 
 public class HelloController implements Initializable {
 
-    private Anstaehendelauefe anstaehendelauefe;
 
     @FXML
     private TableView<Anstaehendelauefe> tvAnstaehendelauefe;
 
-    @FXML               //Zeilenobjektklasse, M// emberklasse
-    private TableColumn<Anstaehendelauefe, String> Name;
     @FXML
-    private TableColumn<Anstaehendelauefe, Integer> Laufveranstaltungen_ID;
+    private TableColumn<Anstaehendelauefe,String> Nametf;
     @FXML
-    private TableColumn<Anstaehendelauefe, Date> Date;
+    private TableColumn<Anstaehendelauefe,Integer> Laufveranstaltungen_IDtf;
     @FXML
-    private TableColumn<Anstaehendelauefe, Time> Startzeit;
+    private TableColumn<Anstaehendelauefe, Date>Datetf;
+    @FXML
+    private TableColumn<Anstaehendelauefe,Time> Startzeittf;
+
 
     @FXML
-    private Button btnAnmelden;
-
+    private TableView<Rangliste>tvRangliste;
+    @FXML
+    private TableColumn<Rangliste,Integer> Laufteilnahme_IDrl;
+    @FXML
+    private TableColumn<Rangliste, Time> Zeitrl;
+    @FXML
+    private TableColumn<Rangliste,Integer>  Plazierungrl;
+    @FXML
+    private TableColumn<Rangliste, Integer>  Startnummerrl;
+    @FXML
+    private TextField Vorname;
+    @FXML
+    private TextField Nachname;
+    @FXML
+    private TextField Adresse;
 
 
     @Override
 
     public void initialize(URL url, ResourceBundle rb) {
-        //cbPersons.setItems(PersonDAO.getPersons());
-        ObservableList<Anstaehendelauefe> myAnstaehendelauefeList = AnstaehendelauefeDAO.getVeranstaltung();
-        System.out.println(myAnstaehendelauefeList);
+        Laufteilnahme_IDrl.setCellValueFactory(new PropertyValueFactory<Rangliste, Integer>("Lautilnahme_ID"));
+        Zeitrl.setCellValueFactory(new PropertyValueFactory<Rangliste, Time>("Zeit"));
+        Plazierungrl.setCellValueFactory(new PropertyValueFactory<Rangliste, Integer>("Plazierung"));
+
+        Startnummerrl.setCellValueFactory(new PropertyValueFactory<Rangliste, Integer>("Startnummer"));
+
+        tvRangliste.setItems(RagnlisteDAO.getRangliste());
+
+        Nametf.setCellValueFactory(new PropertyValueFactory<Anstaehendelauefe, String>("Nameanstaehendelauf"));
+        Laufveranstaltungen_IDtf.setCellValueFactory(new PropertyValueFactory<Anstaehendelauefe, Integer>("Laufveranstaltungen_ID"));
+        Datetf.setCellValueFactory(new PropertyValueFactory<Anstaehendelauefe, Date>("Datum"));
+        Startzeittf.setCellValueFactory(new PropertyValueFactory<Anstaehendelauefe, Time>("Startzeit"));
+        tvAnstaehendelauefe.setItems(AnstaehendelauefeDAO.getVeranstaltung());
 
 
-        tvAnstaehendelauefe.setItems(myAnstaehendelauefeList);
     }
 
-    @FXML
-    private void btnAnmelden() {
-        System.out.println("You clicked me!");
-    }
+    @
 
 }

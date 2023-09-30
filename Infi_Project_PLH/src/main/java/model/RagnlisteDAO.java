@@ -9,34 +9,34 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class RagnlisteDAO {
-    public static ObservableList<Anstaehendelauefe> getVeranstaltung () {
-        ObservableList<Anstaehendelauefe> Anstaehende1 =
+    public static ObservableList<Rangliste> getRangliste () {
+        ObservableList<Rangliste> Rangliste =
                 FXCollections.observableArrayList();
         Connection con;
-        Anstaehendelauefe an1;
+        Rangliste an1;
 
         try {
             con = DBConnector.connect();
             System.out.println("con: " + con);
-            String sql = "SELECT * FROM Laufteilnahme ";
+            String sql = "SELECT Lautilnahme_ID,Veranstaltungs_ID, Zeit, Plazierung, Startnummer  FROM Laufteilnahme ";
 
             ResultSet rs = con.createStatement().executeQuery(sql);
-            System.out.println("Test");
 
             while (rs.next()) {
                 an1 = new Anstaehendelauefe(
                         rs.getInt("Lautilnahme_ID"),
                         rs.getInt("Veranstaltungs_ID"),
                         rs.getTime("Zeit"),
-                        rs.getInt("Plazierung")
+                        rs.getInt("Plazierung"),
+                        rs.getInt("Startnummer")
                 );
-                Anstaehende1.add(an1);
+                Rangliste.add(an1);
             }
         } catch (SQLException ex) {
             System.err.println(ex.getMessage());
         }
 
-        return Anstaehende1;
+        return Rangliste;
     }
 
 }

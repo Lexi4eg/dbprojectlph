@@ -1,42 +1,47 @@
 package model;
 
+import javafx.beans.property.SimpleIntegerProperty;
+import javafx.beans.property.SimpleStringProperty;
+
 import java.sql.Time;
+import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.SimpleTimeZone;
 
 public class Anstaehendelauefe {
 
-        int Laufveranstaltungen_ID;
-        String Name;
-        Date Datum;
+    private int Laufveranstaltungen_ID;
+    private String  Nameanstaehendelauf;
+    private Date  Datum;
+    private Time Startzeit;
 
-        Time Startzeit;
-
-    public Anstaehendelauefe(int Laufveranstaltungen_ID, String name, Date datum, Time Startzeit) {
+    public Anstaehendelauefe(int Laufveranstaltungen_ID, String Nameanstaehendelauf, Date Datum, Time Startzeit) {
         this.Laufveranstaltungen_ID = Laufveranstaltungen_ID;
-        Name = name;
-        Datum = datum;
-        Startzeit = Startzeit;
+        this.Nameanstaehendelauf = Nameanstaehendelauf;
+        this.Datum = Datum;
+        this.Startzeit = Startzeit;
     }
 
-    public Anstaehendelauefe(int Laufveranstaltungen_ID, String name) {
+    public Anstaehendelauefe(int Laufveranstaltungen_ID, String Nameanstaehendelauf) {
         this.Laufveranstaltungen_ID = Laufveranstaltungen_ID;
-        this.Name = name;
+        this.Nameanstaehendelauf = Nameanstaehendelauf;
+
     }
 
-    public int getID() {
+    public int getLaufveranstaltungen_ID() {
         return Laufveranstaltungen_ID;
     }
 
-    public void setID(int Laufveranstaltungen_ID) {
-        this.Laufveranstaltungen_ID = Laufveranstaltungen_ID;
+    public void setLaufveranstaltungen_ID(int laufveranstaltungen_ID) {
+        Laufveranstaltungen_ID = laufveranstaltungen_ID;
     }
 
-    public String getName() {
-        return Name;
+    public String getNameanstaehendelauf() {
+        return Nameanstaehendelauf;
     }
 
-    public void setName(String name) {
-        Name = name;
+    public void setNameanstaehendelauf(String Nameanstaehendelauf) {
+        this.Nameanstaehendelauf = Nameanstaehendelauf;
     }
 
     public Date getDatum() {
@@ -47,22 +52,21 @@ public class Anstaehendelauefe {
         Datum = datum;
     }
 
-    public Time getZeit() {
+    public Time getStartzeit() {
         return Startzeit;
     }
 
-    public void setZeit(Time startzeit) {
+    public void setStartzeit(Time startzeit) {
         Startzeit = startzeit;
     }
-
 
     @Override
     public String toString() {
         return "Anstaehendelauefe{" +
-                "ID=" + Laufveranstaltungen_ID +
-                ", Name='" + Name + '\'' +
+                "Laufveranstaltungen_ID=" + Laufveranstaltungen_ID +
+                ", Nameanstaehendelauf='" + Nameanstaehendelauf + '\'' +
                 ", Datum=" + Datum +
-                ", Zeit=" + Startzeit +
+                ", Startzeit=" + Startzeit +
                 '}';
     }
 }

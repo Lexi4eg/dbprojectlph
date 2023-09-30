@@ -19,10 +19,9 @@ public class AnstaehendelauefeDAO {
         try {
             con = DBConnector.connect();
             System.out.println("con: " + con);
-            String sql = "SELECT * FROM Laufveranstaltungen ";
+            String sql = "SELECT Laufveranstaltungen_ID, Name, Datum, Startzeit FROM Laufveranstaltungen";
 
             ResultSet rs = con.createStatement().executeQuery(sql);
-            System.out.println("Test");
 
             while (rs.next()) {
                 an1 = new Anstaehendelauefe(
@@ -39,4 +38,6 @@ public class AnstaehendelauefeDAO {
 
         return Anstaehende1;
     }
+
+
 }
