@@ -24,7 +24,7 @@ public class RagnlisteDAO {
             System.out.println("Test");
 
             while (rs.next()) {
-                an1 = new Rangliste(
+                an1 = new Anstaehendelauefe(
                         rs.getInt("Lautilnahme_ID"),
                         rs.getInt("Veranstaltungs_ID"),
                         rs.getTime("Zeit"),

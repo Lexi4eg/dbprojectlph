@@ -10,7 +10,7 @@ public class Rangliste {
     int Plazierung;
     int Startnummer;
 
-    public Rangliste(int lautilnahme_ID, int veranstaltungs_ID, Date zeit, int plazierung, int startnummer) {
+    public Rangliste(int lautilnahme_ID, int veranstaltungs_ID, Date zeit, int plazierung) {
         Lautilnahme_ID = lautilnahme_ID;
         Veranstaltungs_ID = veranstaltungs_ID;
         Zeit = zeit;

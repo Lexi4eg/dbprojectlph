@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="377c0885-25a0-41b2-8e8c-b03075aa3c10" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/RagnlisteDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Rangliste.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/infi_project_plh/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/infi_project_plh/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Anstaehendelauefe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Anstaehendelauefe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/infi_project_plh/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/infi_project_plh/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/RagnlisteDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/RagnlisteDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Rangliste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Rangliste.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,13 +28,6 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="2PMrOKHj4qNOsq4Uc2kd8swsaC2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -49,15 +40,18 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/felixprattes/Programming/Infi_Project_PLH/dbprojectlph/Infi_Project_PLH/src/main/java/util",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "19",
+    "last_opened_file_path": "C:/Users/felix/Documents/Developer/Schule-Java/dbprojectlph/Infi_Project_PLH",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
+    "project.structure.proportion": "0.15429688",
     "project.structure.side.proportion": "0.2045977",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "preferences.editor",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -120,6 +114,9 @@
       <workItem from="1683884162529" duration="2039000" />
       <workItem from="1683886720075" duration="66000" />
       <workItem from="1685685298317" duration="8852000" />
+      <workItem from="1686232422298" duration="152000" />
+      <workItem from="1686232583189" duration="287000" />
+      <workItem from="1686383004509" duration="1443000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1685700563836</created>
@@ -137,5 +134,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Test" />
     <option name="LAST_COMMIT_MESSAGE" value="Test" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
